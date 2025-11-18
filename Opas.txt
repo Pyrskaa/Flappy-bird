@@ -1,0 +1,2 @@
+Tein kopion vuonna 2013 tehdystä pelistä flappy nimeltään flappy bird. Pelissä on aloitus ruutu ja game over ruutu. 
+Pelissä linnulla yritetään lentää putkien ohi ja jokaisen putken ylittämisestä saa pisteen jos putkeen osuu peli loppuu ja voit yrittää uudelleen.

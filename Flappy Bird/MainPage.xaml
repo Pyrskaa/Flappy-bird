@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flappy_Bird.MainPage"
+             BackgroundColor="SkyBlue">
+
+    <AbsoluteLayout x:Name="GameLayout">
+        <Image x:Name="Background" Source="background_day.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All" />
+
+        <Image x:Name="Bird"
+               Source="yellowbird_midflap.png"
+               WidthRequest="34"
+               HeightRequest="24"
+               AbsoluteLayout.LayoutBounds="0.3,0.5,AutoSize,AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <StackLayout x:Name="ScoreContainer"
+                     Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Start"
+                     Margin="0,40,0,0"
+                     AbsoluteLayout.LayoutBounds="0.5,0,AutoSize,AutoSize"
+                     AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Label x:Name="GameOverLabel"
+               Text="Game Over!"
+               FontSize="48"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="0,20,0,0"
+               HorizontalTextAlignment="Center"
+               IsVisible="False"
+               AbsoluteLayout.LayoutBounds="0.5,0.28,AutoSize,AutoSize"
+               AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Button x:Name="PlayButton"
+                Text="Play"
+                FontSize="32"
+                WidthRequest="220"
+                HeightRequest="64"
+                BackgroundColor="#80FFFFFF"
+                AbsoluteLayout.LayoutBounds="0.5,0.55,200,64"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+
+        <Button x:Name="RetryButton"
+                Text="Try Again"
+                FontSize="24"
+                WidthRequest="200"
+                HeightRequest="56"
+                IsVisible="False"
+                BackgroundColor="#80FFFFFF"
+                AbsoluteLayout.LayoutBounds="0.5,0.42,200,56"
+                AbsoluteLayout.LayoutFlags="PositionProportional" />
+    </AbsoluteLayout>
+</ContentPage>
